@@ -1,0 +1,28 @@
+.headTableDaily {
+  table {
+    margin-bottom: 0px !important;
+    thead > tr th {
+      font-size: 1.1em;
+      text-align: center !important;
+      vertical-align: inherit;
+    }
+  }
+}
+
+.rowNewStyle {
+  td {
+    background: #e5e5e5;
+  }
+}
+
+.rowConfirmStyle {
+  td {
+    background: #52a135;
+  }
+}
+
+.rowCanceledStyle {
+  td {
+    background: #d83e3e;
+  }
+}

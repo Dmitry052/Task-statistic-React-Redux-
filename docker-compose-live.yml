@@ -1,0 +1,16 @@
+version: '2'
+services:
+  rb-db:
+    restart: always
+    build: ./init/
+    image: rb-pg
+    ports:
+     - "33755:5432"
+  rb-app:
+    restart: always
+    build: .
+    image: rb-app
+    ports:
+     - "3917:3917"
+    depends_on:
+      - rb-db

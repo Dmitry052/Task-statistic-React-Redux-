@@ -1,0 +1,51 @@
+{
+  "sourceData": {
+    "url": "/manager/data/stat",
+    "limit": 50,
+    "offset": 0
+  },
+  "columns": [
+    {
+      "columnName": "Email",
+      "field": "email",
+      "type": "string"
+    },
+    {
+      "columnName": "KYC create date",
+      "field": "date_create",
+      "type": "date"
+    },
+    {
+      "columnName": "KYC expired date",
+      "field": "date_confirm_expired",
+      "type": "date"
+    }
+  ],
+  "filters": [
+    {
+      "name": "to",
+      "type": "date",
+      "default": "-7",
+      "displayname": "Create date"
+    },
+    {
+      "name": "from",
+      "type": "date",
+      "default": "0",
+      "displayname": "Expired date"
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "default": "",
+      "displayname": "Email"
+    },
+    {
+      "name": "status",
+      "type": "select",
+      "default": "NEW",
+      "displayname": "Status",
+      "value": ["NEW", "UPLOADED", "CONFIRMED", "CANCELED", "EXPIRED"]
+    }
+  ]
+}

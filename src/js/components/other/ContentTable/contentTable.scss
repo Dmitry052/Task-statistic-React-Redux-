@@ -1,0 +1,52 @@
+.filters {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.headTableDaily {
+  table {
+    margin-bottom: 0px !important;
+    thead > tr th {
+      font-size: 1.1em;
+      text-align: center !important;
+      vertical-align: inherit;
+    }
+  }
+}
+
+.numStyle {
+  text-align: right !important;
+}
+
+.strStyle {
+  text-align: left !important;
+}
+
+.countryStyle {
+  text-align: center !important;
+}
+
+.loaderBlock {
+  position: absolute;
+  width: -webkit-fill-available;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  z-index: 100;
+
+  i {
+    width: 75px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.mainBlock {
+  position: relative;
+}
+
+.tableRow {
+  opacity: 0.5;
+}

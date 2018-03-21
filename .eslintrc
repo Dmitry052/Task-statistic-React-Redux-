@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": ["flowtype"],
+  "globals": {
+    "window": true
+  },
+  "rules": {
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "requireForBlockBody": false,
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": [2, "as-needed"]
+  }
+}

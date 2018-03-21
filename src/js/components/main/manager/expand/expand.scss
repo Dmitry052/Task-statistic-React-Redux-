@@ -1,0 +1,57 @@
+.textPart {
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  > button {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+
+.containerFoto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnControl {
+  button {
+    margin-right: 5px;
+  }
+}
+
+.declineStyle {
+  margin-bottom: 10px;
+
+  button {
+    margin-right: 5px;
+  }
+
+  textarea {
+    margin-bottom: 5px;
+  }
+  button {
+    float: right;
+  }
+}
+
+.checkField {
+  i {
+    color: green;
+  }
+}
+
+.unCheckField {
+  i {
+    color: red;
+  }
+}
+
+.errorSizeComment {
+  padding-left: 15px;
+  font-size: 12px;
+  color: red;
+}

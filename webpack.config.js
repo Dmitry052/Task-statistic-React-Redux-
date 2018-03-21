@@ -1,0 +1,124 @@
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const reScript = /\.jsx?$/;
+const reStyle = /\.(css|less|scss|sss)$/;
+
+module.exports = env => {
+  return {
+    entry: [
+      'react-hot-loader/patch',
+      path.resolve(__dirname, 'src/js/index.js')
+      // path.resolve(__dirname, 'src/scss/style.scss'),
+    ],
+    devServer: {
+      hot: true
+    },
+    output: {
+      path: path.resolve(__dirname, 'public'),
+      filename: 'js/bundle.js'
+    },
+
+    module: {
+      rules: [
+        // Rules for JS / JSX
+        {
+          test: reScript,
+          include: path.resolve(__dirname, './src'),
+          loader: 'babel-loader',
+          options: {
+            presets: ['stage-2', 'react']
+          }
+        },
+
+        // Rules for Style Sheets
+        {
+          test: reStyle,
+          rules: [
+            // Convert CSS into JS module
+            {
+              issuer: { not: [reStyle] },
+              use: 'isomorphic-style-loader'
+            },
+
+            // Process external/third-party styles
+            {
+              exclude: path.resolve(__dirname, './src'),
+              loader: 'css-loader',
+              options: {
+                sourceMap: false,
+                minimize: true,
+                discardComments: { removeAll: true }
+              }
+            },
+
+            // Process internal/project styles (from src folder)
+            {
+              include: path.resolve(__dirname, './src'),
+              loader: 'css-loader',
+              options: {
+                // CSS Loader https://github.com/webpack/css-loader
+                importLoaders: 1,
+                sourceMap: false,
+                // CSS Modules https://github.com/css-modules/css-modules
+                modules: true,
+                localIdentName: '[name]-[local]',
+                // CSS Nano http://cssnano.co/options/
+                minimize: true,
+                discardComments: { removeAll: true }
+              }
+            },
+
+            // Apply PostCSS plugins including autoprefixer
+            // {
+            //   loader: 'postcss-loader',
+            //   options: {
+            //     config: {
+            //       path: './tools/postcss.config.js',
+            //     },
+            //   },
+            // },
+
+            // Compile Sass to CSS
+            // https://github.com/webpack-contrib/sass-loader
+            // Install dependencies before uncommenting: yarn add --dev sass-loader node-sass
+            {
+              test: /\.scss$/,
+              loader: 'sass-loader'
+            },
+
+            {
+              test: /\.json$/,
+              exclude: /(node_modules)/,
+              loader: 'json-loader'
+            },
+
+            {
+              test: /\.svg$/,
+              loader: 'svg-inline-loader'
+            }
+          ]
+        }
+      ]
+    },
+    watch: env.NODE_ENV === 'devlocal',
+    plugins: [
+      new ExtractTextPlugin({
+        filename: 'css/style.css',
+        allChunks: true
+      })
+      // new webpack.NamedModulesPlugin(),
+      // new webpack.HotModuleReplacementPlugin(),
+
+      // new HtmlWebpackPlugin(),
+      // new webpack.NamedModulesPlugin(),
+    ],
+    resolve: {
+      alias: {
+        // Алиасы путей
+        // ComponentsExpl: path.resolve(__dirname, 'src/js/components/exploitation'),
+        Config: path.resolve(__dirname, 'etc')
+      }
+    }
+  };
+};
