@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BodyTable /> Matches the snapshot BodyTable component 1`] = `
+<React.Fragment>
+  <tr
+    key="tr-itemTR-1"
+  >
+    <td
+      key="td-itemTD-0"
+      nowrap="false"
+    >
+      2018-04-16
+    </td>
+    <td
+      key="td-itemTD-1"
+      nowrap="false"
+    >
+      COUPON
+    </td>
+    <td
+      key="td-itemTD-2"
+      nowrap="false"
+    >
+      971
+    </td>
+    <td
+      key="td-itemTD-3"
+      nowrap="false"
+    >
+      <div>
+        <ReactCountryFlag
+          code="ru"
+          svg={true}
+        />
+          
+        ru
+      </div>
+    </td>
+    <td
+      key="td-itemTD-5"
+      nowrap="false"
+    >
+      NaN
+    </td>
+    <td
+      key="td-itemTR-6"
+      nowrap="false"
+    />
+  </tr>
+</React.Fragment>
+`;

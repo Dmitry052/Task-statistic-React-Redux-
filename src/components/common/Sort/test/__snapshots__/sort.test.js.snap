@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sort /> Matches the snapshot Sort component 1`] = `
+<i
+  aria-hidden="true"
+  className="fa fa-sort-amount-asc"
+  onClick={[Function]}
+/>
+`;

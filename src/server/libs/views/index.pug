@@ -1,0 +1,19 @@
+- var clearCacheQuery = environment !== 'production' ? `?t=${+ new Date()}` : '';
+doctype html
+html
+    head
+        title!= `Partner cabinet`
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(http-equiv='Cache-Control' content='no-cache')
+        link(rel='stylesheet', href=`/css/font-awesome/css/font-awesome.min.css${clearCacheQuery}`)
+        link(rel='stylesheet', href=`/css/bootstrap4/bootstrap.min.css`)
+        script(src=`/js/jQuery.js`)
+        script(src=`/js/bootstrap4/bootstrap.min.js`)
+    body
+        div(id='root')
+        //- script(src='https://www.gstatic.com/charts/loader.js')
+       
+        script(src=`/js/bundle.js${clearCacheQuery}`)
+        //- script(src='/js/Raven.js')
+        

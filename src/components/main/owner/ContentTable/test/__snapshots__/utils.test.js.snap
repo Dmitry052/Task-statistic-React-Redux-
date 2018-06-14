@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Utils methods countryFormat 1`] = `
+<div>
+  <ReactCountryFlag
+    code="ru"
+    svg={true}
+  />
+    
+  ru
+</div>
+`;

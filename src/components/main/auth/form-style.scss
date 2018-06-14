@@ -1,0 +1,77 @@
+.auth {
+  width: 100%;
+  h2 {
+    color: #fff;
+    text-align: -webkit-center;
+    padding: 10px 10px;
+  }
+
+  span {
+    color: #fff;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    transition: all 0.5s ease;
+
+    background: #1ab188;
+    border: none;
+    font-size: 1.2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      background: #158667 !important;
+    }
+  }
+}
+
+.auth_head {
+  margin-bottom: 10px;
+}
+
+.auth_form {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+
+  background: rgba(19, 35, 47, 0.9);
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+
+  .inputElem {
+    padding: 0 10px;
+
+    label {
+      color: #fff;
+      width: 100%;
+
+      span {
+        padding: 0;
+        margin-bottom: 0;
+        display: block;
+      }
+    }
+
+    input {
+      font-size: 18px;
+      background: none;
+      color: #fff;
+      height: 40px !important;
+      border-radius: 0 !important;
+      border: 1px solid #a0b3b0 !important;
+    }
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.form_errors {
+  color: #bc0000;
+  padding: 0 10px;
+}

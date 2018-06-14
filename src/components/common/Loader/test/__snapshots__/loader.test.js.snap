@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> Matches the snapshot HeaderTable component 1`] = `
+<div
+  className="some-test-class"
+>
+  <i
+    aria-hidden="true"
+    className="fa fa-spinner fa-pulse fa-4x fa-fw"
+  />
+</div>
+`;

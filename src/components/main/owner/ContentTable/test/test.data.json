@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "date": "2018-03-31T00:00:00.000Z",
+      "web": {
+        "total": { "hits": 342, "hosts": 105, "total": { "fn": "sum" } },
+        "index": { "hits": 59, "hosts": 50 },
+        "form": { "hits": 25, "hosts": 21 }
+      },
+      "tor": {
+        "total": { "hits": 1949 },
+        "index": { "hits": 55 },
+        "form": { "hits": 6 }
+      }
+    },
+    {
+      "date": "2018-03-24T00:00:00.000Z",
+      "web": {
+        "total": { "hits": 817, "hosts": 261 },
+        "index": { "hits": 101, "hosts": 56 },
+        "form": { "hits": 23, "hosts": 20 }
+      },
+      "tor": {
+        "total": { "hits": 2107 },
+        "index": { "hits": 51 },
+        "form": { "hits": 2 }
+      }
+    },
+    {
+      "date": "2018-03-17T00:00:00.000Z",
+      "web": {
+        "total": { "hits": 404, "hosts": 168 },
+        "index": { "hits": 28, "hosts": 24 },
+        "form": { "hits": 9, "hosts": 5 }
+      },
+      "tor": {
+        "total": { "hits": 276 },
+        "index": { "hits": 36 },
+        "form": { "hits": 3 }
+      }
+    },
+    {
+      "date": "2018-03-10T00:00:00.000Z",
+      "web": {
+        "total": { "hits": 365, "hosts": 119 },
+        "index": { "hits": 24, "hosts": 17 },
+        "form": { "hits": 6, "hosts": 3 }
+      },
+      "tor": {
+        "total": { "hits": 267 },
+        "index": { "hits": 19 },
+        "form": { "hits": 5 }
+      }
+    },
+    {
+      "date": "2018-03-03T00:00:00.000Z",
+      "web": {
+        "total": { "hits": 516, "hosts": 1 },
+        "index": { "hits": 0, "hosts": 0 },
+        "form": { "hits": 0, "hosts": 0 }
+      },
+      "tor": {
+        "total": { "hits": 0 },
+        "index": { "hits": 0 },
+        "form": { "hits": 0 }
+      }
+    },
+    {
+      "date": "2018-02-24T00:00:00.000Z",
+      "web": {
+        "total": { "hits": 109, "hosts": 1 },
+        "index": { "hits": 0, "hosts": 0 },
+        "form": { "hits": 0, "hosts": 0 }
+      },
+      "tor": {
+        "total": { "hits": 0 },
+        "index": { "hits": 0 },
+        "form": { "hits": 0 }
+      }
+    }
+  ],
+  "error": null,
+  "status": "OK"
+}

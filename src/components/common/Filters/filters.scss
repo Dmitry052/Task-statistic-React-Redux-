@@ -1,0 +1,67 @@
+.btnFilter {
+  display: none;
+  height: 50px;
+  align-items: center;
+  background-color: #f9f8f8;
+
+  span {
+    font-size: 1.3rem;
+  }
+
+  button {
+    cursor: default;
+    float: right;
+    margin: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      flex-grow: 2;
+    }
+  }
+}
+
+.filtersBlock {
+  background-color: #f9f8f8;
+
+  input,
+  select {
+    -webkit-appearance: none;
+    border-radius: 0 !important;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  button {
+    float: right;
+  }
+  
+  .btnUpdate {
+    margin: 9px 0;
+  }
+
+  @media only screen and (min-width: 770px) {
+    display: block;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+      flex-basis: 15%;
+      @media only screen and (max-width: 770px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

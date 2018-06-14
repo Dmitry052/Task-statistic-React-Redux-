@@ -1,0 +1,127 @@
+{
+  "name": "summary",
+  "displayName": "SUMMARY",
+  "sourceData": { "url": "/api/summary", "filters": [] },
+  "fields": [
+    {
+      "type": "string",
+      "total": { "text": "Total:" },
+      "field": "date",
+      "displayName": "DATE",
+      "prefix": null,
+      "postfix": null,
+      "nowrap": false,
+      "sortable": false
+    },
+    {
+      "displayName": "WEB",
+      "group": true,
+      "type": "object",
+      "items": [
+        {
+          "displayName": "TOTAL",
+          "group": true,
+          "type": "object",
+          "items": [
+            {
+              "field": "hits",
+              "displayName": "HITS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            },
+            {
+              "field": "hosts",
+              "displayName": "HOSTS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            }
+          ]
+        },
+        {
+          "displayName": "INDEX",
+          "group": true,
+          "type": "object",
+          "items": [
+            {
+              "field": "hits",
+              "displayName": "HITS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            },
+            {
+              "field": "hosts",
+              "displayName": "HOSTS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            }
+          ]
+        },
+        {
+          "displayName": "FORM",
+          "group": true,
+          "type": "object",
+          "items": [
+            {
+              "field": "hits",
+              "displayName": "HITS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            },
+            {
+              "field": "hosts",
+              "displayName": "HOSTS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "displayName": "TOR",
+      "group": true,
+      "type": "object",
+      "items": [
+        {
+          "displayName": "TOTAL",
+          "group": true,
+          "type": "object",
+          "items": [
+            {
+              "field": "hits",
+              "displayName": "HITS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            }
+          ]
+        },
+        {
+          "displayName": "INDEX",
+          "group": true,
+          "type": "object",
+          "items": [
+            {
+              "field": "hits",
+              "displayName": "HITS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            }
+          ]
+        },
+        {
+          "displayName": "FORM",
+          "group": true,
+          "type": "object",
+          "items": [
+            {
+              "field": "hits",
+              "displayName": "HITS",
+              "type": "number",
+              "total": { "fn": "sum" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

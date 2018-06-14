@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderTable /> Matches the snapshot HeaderTable component 1`] = `
+<React.Fragment>
+  <tr
+    key="tr-bills-0"
+  >
+    <th
+      colSpan={0}
+      key="th-undefined"
+      rowSpan={0}
+    >
+      BILL_ID
+    </th>
+    <th
+      colSpan={0}
+      key="th-undefined"
+      rowSpan={0}
+    >
+      BILL_DATE
+    </th>
+    <th
+      colSpan={0}
+      key="th-undefined"
+      rowSpan={0}
+    >
+      TOKENS_SOLD
+      <WithStyles(Sort)
+        field="tokens_sold"
+        path="tokens_sold"
+        type="number"
+      />
+    </th>
+  </tr>
+</React.Fragment>
+`;
